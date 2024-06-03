@@ -1,1 +1,96 @@
-@import url("https://use.typekit.net/efa7ivj.css");/*# sourceMappingURL=styles2.css.map */
+@import url("https://use.typekit.net/efa7ivj.css");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "sofia-pro-soft", sans-serif;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  flex-shrink: 0;
+  overflow-x: hidden;
+}
+.section h3 {
+  margin: 0;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 15px;
+  color: #fff;
+  text-shadow: 0.1em 0.1em 5px rgba(0, 0, 0, 0.7);
+}
+.section .bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.nav-menu {
+  display: inline-block;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav {
+  background: #4b0887;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 4px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000000;
+}
+nav h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+nav ul {
+  background: #4b0887;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 220px;
+  padding-top: 40px;
+  transform: translateX(-100%);
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+}
+nav ul li a:hover {
+  background: #cc09ac;
+}
+nav button {
+  border: 0;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}/*# sourceMappingURL=styles2.css.map */
